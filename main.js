@@ -1,4 +1,4 @@
-//V.1.0.4
+//V.1.0.5
 import * as THREE from 'https://unpkg.com/three/build/three.js';
 //import OrbitControls from 'https://unpkg.com/three@0.150.0/examples/jsm/controls/OrbitControls.js';
 
