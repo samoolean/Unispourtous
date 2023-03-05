@@ -30,6 +30,10 @@
 			
 			const spaceTexture = new THREE.TextureLoader().load('img/space.jpg');
 			scene.background = spaceTexture;
+			
+			const MP1 = new THREE.TextureLoader().load('img/texture/p1.jpg');
+
+			const P1 = new THREE.Mesh(new THREE.SphereGeometry(3, 32, 32), new THREE.MeshBasicMaterial({ map: P1 }));
 
 			camera.position.z = 5;
 
