@@ -1,6 +1,6 @@
-//V.1
+//V.1.0.1
 
-import * as THREE from 'three';
+import * as THREE from 'node_modules';
 
 const scene = new THREE.Scene();
 const camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 );
