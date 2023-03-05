@@ -1,4 +1,4 @@
-//V.1.0.3
+//V.1.0.4
 import * as THREE from 'https://unpkg.com/three/build/three.module.js';
 import OrbitControls from 'https://unpkg.com/three@0.150.0/examples/jsm/controls/OrbitControls.js';
 
@@ -16,6 +16,7 @@ const cube = new THREE.Mesh( geometry, material );
 scene.add( cube );
 
 camera.position.z = 5;
+controls.update();
 
 function animate() {
 	requestAnimationFrame( animate );
