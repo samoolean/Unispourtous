@@ -1,6 +1,6 @@
 //V.1.0.2
-import * as THREE from "/build/three.module.js";
-import { OrbitControls } from "/jsm/controls/OrbitControls.js";
+import * as THREE from 'https://unpkg.com/three/build/three.module.js';
+import * from "https://unpkg.com/three@0.150.0/examples/jsm/controls/OrbitControls.js";
 
 const controls = new OrbitControls( camera, renderer.domElement );
 const scene = new THREE.Scene();
