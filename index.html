@@ -33,8 +33,11 @@
 			
 			const MP1 = new THREE.TextureLoader().load('img/texture/MP1.jpg');
 
-			const P1 = new THREE.Mesh(new THREE.SphereGeometry(16, 32, 32), new THREE.MeshBasicMaterial({ map : MP1 }));
+			const P1 = new THREE.Mesh(new THREE.SphereGeometry(20, 32, 32), new THREE.MeshBasicMaterial({ map : MP1 }));
                         scene.add( P1 );
+			
+			P1.position.y == window.innerWidth;
+			P1.position.x == window.innerWidth;
 
 			camera.position.z = 50;
 
@@ -43,7 +46,7 @@
 
 				cube.rotation.x += 0.01;
 				cube.rotation.y += 0.01;
-				P1.position.y += 0.03;
+				P1.rotation.y += 0.03;
 
 				renderer.render( scene, camera );
 			}
