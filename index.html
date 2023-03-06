@@ -15,6 +15,8 @@
 
 			const scene = new THREE.Scene();
 			const camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 );
+			
+			alert("se site est super cool :)");
 
 			const renderer = new THREE.WebGLRenderer({
   			canvas: document.querySelector('#bg'),
@@ -36,8 +38,8 @@
 			const P1 = new THREE.Mesh(new THREE.SphereGeometry(20, 64, 32), new THREE.MeshBasicMaterial({ map : MP1 }));
                         scene.add( P1 );
 			
-			P1.position.y == window.innerWidth;
-			P1.position.x == window.innerWidth;
+			P1.position.y == screen.width;
+			P1.position.x == screen.height;
 
 			camera.position.z = 50;
 
