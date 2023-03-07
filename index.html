@@ -16,6 +16,9 @@
 			const scene = new THREE.Scene();
 			const camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 );
 			
+			let Wtop = window.screenTop;
+			let Wleft = window.screenLeft;
+			
 			alert("se site est super cool :)");
 
 			const renderer = new THREE.WebGLRenderer({
@@ -48,8 +51,8 @@
 				
 				P1.rotation.y += 0.005;
 				P1.rotation.x += -0.005;
-				P1.position.y == window.screenLeft;
-				P1.position.x == window.screenTop;
+				P1.position.y == Wleft;
+				P1.position.x == Wtop;
 
 				renderer.render( scene, camera );
 			}
