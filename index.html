@@ -28,15 +28,16 @@
   			import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 			import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 
+			const camera = new THREE.PerspectiveCamera( 75, sizes.width / sizes.height, 0.1, 1000 );
 			const scene = new THREE.Scene();
 			const controls = new OrbitControls( camera, renderer.domElement );
 			const loader = new GLTFLoader();
 			
-			const camera = new THREE.PerspectiveCamera( 75, sizes.width / sizes.height, 0.1, 1000 );
 			const spaceTexture = new THREE.TextureLoader().load('img/space.jpg');
-			
 			const canvas = document.querySelector('#bg')
+			
 			const renderer = new THREE.WebGLRenderer({canvas});
+			renderer.setSize(sizes.width,sizes.height);
 			
 			const light = new THREE.PointLight( 0xff0000, 1, 100 );
 			light.position.set( 0, 10, 10 );
@@ -138,7 +139,7 @@
 
 			animate();
 			
-			//v 1.2.1.6
+			//v 1.2.1.7
 			
 		</script>
 	</body>
