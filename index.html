@@ -34,6 +34,7 @@
 			const sizes = { width:window.innerWidth , height:window.innerHeight,}
 			const camera = new THREE.PerspectiveCamera( 75, sizes.width / sizes.height, 0.1, 1000 );
 			const scene = new THREE.Scene();
+			
 			const controls = new OrbitControls( camera, renderer.domElement );
 			const loader = new GLTFLoader();
 			
@@ -47,6 +48,9 @@
 			let Wtop = window.screenTop;
 			let Wleft = window.screenLeft;
 			
+			controls.enableDampind = true;
+			controls.enableZoom = false;
+			controls.enablePan = false;
 			
 			loader.load(
 				// resource URL
@@ -151,7 +155,7 @@
 
 			animate();
 			
-			//v 1.2.1.10
+			//v 1.2.1.11
 			
 		</script>
 	</body>
