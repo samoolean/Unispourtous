@@ -28,6 +28,7 @@
   			import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 			import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 
+			const canvas = document.querySelector('#bg')
 			const renderer = new THREE.WebGLRenderer({canvas});
 			renderer.setSize(sizes.width,sizes.height);
 			
@@ -39,7 +40,6 @@
 			const loader = new GLTFLoader();
 			
 			const spaceTexture = new THREE.TextureLoader().load('img/space.jpg');
-			const canvas = document.querySelector('#bg')
 			
 			const light = new THREE.PointLight( 0xff0000, 1, 100 );
 			light.position.set( 0, 10, 10 );
@@ -51,6 +51,8 @@
 			controls.enableDampind = true;
 			controls.enableZoom = false;
 			controls.enablePan = false;
+			controls.autoRotate = true;
+			//controls.autoRotateSpeed = 1;
 			
 			loader.load(
 				// resource URL
