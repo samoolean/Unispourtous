@@ -29,15 +29,23 @@
 			import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 
 			const scene = new THREE.Scene();
-			const camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 );
-			const spaceTexture = new THREE.TextureLoader().load('img/space.jpg');
-			const renderer = new THREE.WebGLRenderer({canvas: document.querySelector('#bg'),});
 			const controls = new OrbitControls( camera, renderer.domElement );
 			const loader = new GLTFLoader();
+			
+			const camera = new THREE.PerspectiveCamera( 75, sizes.width / sizes.height, 0.1, 1000 );
+			const spaceTexture = new THREE.TextureLoader().load('img/space.jpg');
+			
+			const canvas = document.querySelector('#bg')
+			const renderer = new THREE.WebGLRenderer({canvas});
 			
 			const light = new THREE.PointLight( 0xff0000, 1, 100 );
 			light.position.set( 0, 10, 10 );
 			scene.add( light );
+			
+			const sizes = {
+				width:window.innerWidth,
+				height:window.innerHeight,
+			}
 			
 			let Wtop = window.screenTop;
 			let Wleft = window.screenLeft;
@@ -130,7 +138,7 @@
 
 			animate();
 			
-			//v 1.0.1.6
+			//v 1.2.1.6
 			
 		</script>
 	</body>
