@@ -37,9 +37,6 @@
 
 			const P1 = new THREE.Mesh(new THREE.SphereGeometry(20, 64, 32), new THREE.MeshBasicMaterial({ map : MP1 }));
                         scene.add( P1 );
-			
-			P1.position.y == window.screenLeft;
-			P1.position.x == window.screenTop;
 
 			camera.position.z = 50;
 
@@ -48,15 +45,18 @@
 
 				cube.rotation.x += 0.01;
 				cube.rotation.y += 0.01;
+				
 				P1.rotation.y += 0.005;
 				P1.rotation.x += -0.005;
+				P1.position.y == window.screenLeft;
+				P1.position.x == window.screenTop;
 
 				renderer.render( scene, camera );
 			}
 
 			animate();
 			
-			//v 1.0.0
+			//v 1.0.0.1
 			
 		</script>
 	</body>
