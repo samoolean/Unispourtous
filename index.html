@@ -93,7 +93,10 @@
 			//const P1 = new THREE.Mesh(new THREE.SphereGeometry(20, 64, 32), new THREE.MeshBasicMaterial({ map : MP1 }));
                         //scene.add( P1 );
 			
-			camera.position.z = 15;
+			camera.position.z = 5;
+			camera.position.y = 15;
+			camera.position.x = 15;
+			camera.rotation.y = 34;
 			controls.update;
 
 			function animate() {
@@ -114,7 +117,7 @@
 
 			animate();
 			
-			//v 1.0.0.4
+			//v 1.0.0.5
 			
 		</script>
 	</body>
