@@ -81,22 +81,23 @@
 			const spaceTexture = new THREE.TextureLoader().load('img/space.jpg');
 			scene.background = spaceTexture;
 			
-			const MP1 = new THREE.TextureLoader().load('img/texture/Planet_MAT.001_baseColor');
-			const MP2 = new THREE.TextureLoader().load('img/texture/Planet_MAT.002_baseColor');
-			const MP3 = new THREE.TextureLoader().load('img/texture/Planet_MAT.003_baseColor');
-			const MP4 = new THREE.TextureLoader().load('img/texture/Planet_MAT.004_baseColor');
-			const MP5 = new THREE.TextureLoader().load('img/texture/Planet_MAT.005_baseColor');
-			const MP6 = new THREE.TextureLoader().load('img/texture/Planet_MAT.006_baseColor');
-			const MP7 = new THREE.TextureLoader().load('img/texture/Planet_MAT.007_baseColor');
-			const MP8 = new THREE.TextureLoader().load('img/texture/MPlanet_MAT.008_baseColor');
+			const MP1 = new THREE.TextureLoader().load('img/3D/planet/texture/Planet_MAT.001_baseColor');
+			const MP2 = new THREE.TextureLoader().load('img/3D/planet/texture/Planet_MAT.002_baseColor');
+			const MP3 = new THREE.TextureLoader().load('img/3D/planet/texture/Planet_MAT.003_baseColor');
+			const MP4 = new THREE.TextureLoader().load('img/3D/planet/texture/Planet_MAT.004_baseColor');
+			const MP5 = new THREE.TextureLoader().load('img/3D/planet/texture/Planet_MAT.005_baseColor');
+			const MP6 = new THREE.TextureLoader().load('img/3D/planet/texture/Planet_MAT.006_baseColor');
+			const MP7 = new THREE.TextureLoader().load('img/3D/planet/texture/Planet_MAT.007_baseColor');
+			const MP8 = new THREE.TextureLoader().load('img/3D/planet/texture/MPlanet_MAT.008_baseColor');
 
 			//const P1 = new THREE.Mesh(new THREE.SphereGeometry(20, 64, 32), new THREE.MeshBasicMaterial({ map : MP1 }));
                         //scene.add( P1 );
 			
-			camera.position.z = 5;
+			camera.position.z = 1;
 			camera.position.y = 15;
 			camera.position.x = 15;
 			camera.rotation.y = 34;
+			camera.rotation.x = 100;
 			controls.update;
 
 			function animate() {
