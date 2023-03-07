@@ -120,6 +120,14 @@
 			    renderer.setSize( window.innerWidth, window.innerHeight );
 
 			}
+			
+			windows.addEventListener('resize',() => {
+				
+				sizes.width = windows.innerWidth;
+				sizes.height = windows.innerHeight;
+				camera.aspect = sizes.width / sizes.height;
+			
+			});
 
 			function animate() {
 				requestAnimationFrame( animate );
@@ -139,7 +147,7 @@
 
 			animate();
 			
-			//v 1.2.1.7
+			//v 1.2.1.8
 			
 		</script>
 	</body>
