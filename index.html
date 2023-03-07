@@ -99,6 +99,15 @@
 			camera.rotation.y = 34;
 			camera.rotation.x = 100;
 			controls.update;
+			
+			function onWindowResize( event ) {
+
+			    camera.aspect = window.innerWidth / window.innerHeight;
+			    camera.updateProjectionMatrix();
+
+			    renderer.setSize( window.innerWidth, window.innerHeight );
+
+			}
 
 			function animate() {
 				requestAnimationFrame( animate );
@@ -118,7 +127,7 @@
 
 			animate();
 			
-			//v 1.0.0.5
+			//v 1.0.1.6
 			
 		</script>
 	</body>
