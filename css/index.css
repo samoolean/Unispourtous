@@ -43,6 +43,6 @@ nav ul {
 
    list-style : none;
    display : flex;
-   margin :65%;
+   gap :45%;
 
 }
