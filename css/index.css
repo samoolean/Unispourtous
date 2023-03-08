@@ -30,12 +30,18 @@ canvas {
 .topbar {
    
    /*overflow: hidden;*/
-   z-index:2;
-   position : relative;
+   
    width : 100%;
    display : flex;
    justify-content:center;
    background-color : black ;
+
+}
+
+.dmain{
+
+   z-index:2;
+   position : relative;
 
 }
 
