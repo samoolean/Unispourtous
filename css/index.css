@@ -43,9 +43,10 @@ body, canvas, html {
 .B2{
 
    Border-radius:25px;
-   color : green;
+   background-color : green;
    margin-top:75%;
    margin-left:50%;
    z-index : 2;
+   padding :10px;
 
 }
