@@ -20,9 +20,9 @@ body, canvas, html {
    
 }
 
-.topnav {
+.topbar {
    
-   overflow: hidden;
+   /*overflow: hidden;*/
    z-index:2;
    position : relative;
    padding : 4rem 8rem;
@@ -32,7 +32,7 @@ body, canvas, html {
 
 }
 
-.topnav a {
+.topbar a {
 
    text-decoration : none;
    color : white ;
