@@ -1,4 +1,4 @@
-/* version 1.0.0.0*/
+/* version 1.2.0.0*/
 
 body, canvas, html {
    
@@ -51,6 +51,17 @@ canvas {
 
    Border-radius:25px;
    background-color : #32a852;
+   margin-top:75%;
+   margin-left:50%;
+   z-index : 2;
+   padding :10px;
+
+}
+
+.B1{
+
+   Border-radius:25px;
+   background-color : white;
    margin-top:75%;
    margin-left:50%;
    z-index : 2;
