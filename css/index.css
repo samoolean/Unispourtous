@@ -9,3 +9,30 @@ body, canvas {
    /*background-image: url('https://samoolean.github.io/Unispourtous/img/space.jpg');*/
 
 }
+
+.topB{
+
+   position : absolute;
+   top : 0;
+   left : 0;
+   z-index: 1;
+   
+}
+
+nav {
+
+   color:white;
+   z-index:2;
+   position : relative;
+   padding : 4rem 8rem;
+   display : flex;
+   justify-content:
+   
+
+}
+
+nav a {
+
+   
+
+}
