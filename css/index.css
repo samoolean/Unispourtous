@@ -1,4 +1,4 @@
-body, canvas {
+body, canvas, html {
    
    margin: 0px;
    padding: 0px;
@@ -6,6 +6,7 @@ body, canvas {
   top: 0;
   left: 0;
    vertical-align:0px;
+   overflow-x : hidden;
    /*background-image: url('https://samoolean.github.io/Unispourtous/img/space.jpg');*/
 
 }
