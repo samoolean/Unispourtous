@@ -1,7 +1,4 @@
 /* version 1.2.1.2*/
-$primary-color: #34495e;
-$primary-color-shadow: #2c3e50;
-$secondary-color: #1abc9c;
 
 body, canvas, html {
    
@@ -27,7 +24,7 @@ canvas {
    position : absolute;
    top : 0;
    left : 0;
-   z-index: -1;
+   z-index: 1;
    
 }
 
@@ -91,103 +88,153 @@ width : 50px;
 height : 50px;
 }
 
+.divc{
 
-::selection {
-  background: $primary-color;
-  color: #fff;
+   position:relative;
+   z-index:2;
+
 }
 
-// Jumbotrons 
+/*menu*/
 
-.jumbotron {
-  // Stops gaps between jumbotrons
-  padding-top: 150px;
-  padding-bottom: 150px;
-  margin-bottom: 0;
-}
-
-.center {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.photo-cover {
-  background: #34495e url(https://static.pexels.com/photos/36487/above-adventure-aerial-air-large.jpg) no-repeat center center / cover fixed;
-  height: 100%;
+#menuToggle
+{
+  display: block;
   position: relative;
+  top: 50px;
+  left: 50px;
+  
+  z-index: 1;
+  
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle a
+{
+  text-decoration: none;
+  color: #232323;
+  
+  transition: color 0.3s ease;
+}
+
+#menuToggle a:hover
+{
+  color: tomato;
 }
 
 
-.background-primary {
-  background: $primary-color;
-}
-
-.background-secondary {
-  background: $primary-color-shadow;
-}
-
-.large {
-  font-size: 4em;
-}
-
-.medium {
-  font-size: 2em;
-}
-
-/* Header */
-
-.transparent {
-  background: transparent;
-}
-
-.navbar-inverse {
-  transition: all 0.2s ease-in;
-}
-// Portfolio
-
-.thumbnail {
+#menuToggle input
+{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  
   cursor: pointer;
+  
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+  
+  -webkit-touch-callout: none;
+}
+
+/*
+ * Just a quick hamburger
+ */
+#menuToggle span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
   position: relative;
-  display: flex;
+  
+  background: #cdcdcd;
+  border-radius: 3px;
+  
+  z-index: 1;
+  
+  transform-origin: 4px 0px;
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
 }
 
-.thumbnail-svg {
-  flex: 1 0 auto;
-  padding: .5em;
-  max-height: 6em;
+#menuToggle span:first-child
+{
+  transform-origin: 0% 0%;
 }
 
-.thumbnail-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: $secondary-color;
-  opacity: 0;
-  transition: all 0.2s ease-in;
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
 }
 
-.thumbnail:hover .thumbnail-overlay {
+/* 
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+#menuToggle input:checked ~ span
+{
   opacity: 1;
-  transition: all 0.2s ease-in;
-}
-// Projects Pages
-
-.full-screen {
-  background: #eee;
-  height: 100%;
-  width: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  display: none;
-  // Avoids leaving portfolio screen stuck up
-  overflow-y: scroll;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #232323;
 }
 
-.close-window {
-  cursor: pointer;
+/*
+ * But let's hide the middle one.
+ */
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/*
+ * Ohyeah and the last one should go the other direction
+ */
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+/*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+#menu
+{
+  position: absolute;
+  width: 300px;
+  margin: -100px 0 0 -50px;
+  padding: 50px;
+  padding-top: 125px;
+  
+  background: #ededed;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+  
+  transform-origin: 0% 0%;
+  transform: translate(-100%, 0);
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu li
+{
+  padding: 10px 0;
+  font-size: 22px;
+}
+
+/*
+ * And let's slide it in from the left
+ */
+#menuToggle input:checked ~ ul
+{
+  transform: none;
 }
