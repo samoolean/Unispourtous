@@ -9,6 +9,15 @@
 	<body>
 		
 		<canvas id="bg"></canvas>
+		
+		<nav class="topB">
+			<a href="/"> ACCUEIL </a>
+			<ul>
+				<li> <input type="search" id="maRecherche" name="q" placeholder="Rechercher sur le site…" size="30"> </li>
+				<li> <input type="button" id="conn" name="1B" placeholder="Rechercher sur le site…"> </li>
+			
+			</ul>
+		</nav>
 			
 			<script async src="https://unpkg.com/es-module-shims@1.6.3/dist/es-module-shims.js"></script>
 
@@ -43,7 +52,7 @@
 			const spaceTexture = new THREE.TextureLoader().load('img/space.jpg');
 			
 			const light = new THREE.PointLight( 0xff0000, 1, 100 );
-			light.position.set( 0, -10, -10 );
+			light.position.set( 1, -4, 4 );
 			scene.add( light );
 			
 			let Wtop = window.screenTop;
@@ -158,7 +167,7 @@
 
 			animate();
 			
-			//v 1.2.1.14
+			//v 1.2.1.16
 			
 		</script>
 	</body>
