@@ -34,7 +34,7 @@ canvas {
    position : relative;
    width : 100%;
    display : flex;
-   justify-content:space-between;
+   justify-content:center;
    background-color : black ;
 
 }
@@ -72,6 +72,7 @@ canvas {
    background-color : white;
    z-index : 2;
    padding :10px;
+   margin-left : 50px;
 
 }
 
