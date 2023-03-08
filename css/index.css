@@ -1,4 +1,4 @@
-/* version 1.2.0.0*/
+/* version 1.2.0.1*/
 
 body, canvas, html {
    
@@ -55,6 +55,7 @@ canvas {
    margin-left:50%;
    z-index : 2;
    padding :10px;
+   position : relative;
 
 }
 
