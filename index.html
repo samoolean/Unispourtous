@@ -64,6 +64,24 @@
 			light.position.set( 1, 6, 4 );
 			scene.add( light );
 			
+			// sphere on light
+			
+			var geoSphere = new THREE.SphereGeometry(Math.random() * 1, 20, 20);
+			    for (var i = 0; i < 500; i++) {
+				// randRadius = Math.random()*30+10;
+				lumiereS = new THREE.MeshPhongMaterial({
+				    emissive: '#fff'
+				});
+				sphereTab.push(new THREE.Mesh(new THREE.SphereGeometry(Math.random() * 1, 20, 20), lumiereS));
+			    }
+			    var posX = -3000;
+			    var posY = -3000;
+			    for (var i = 0; i < sphereTab.length; i++) {
+				sphereTab[i].position.set(Math.random() * 600 - 300, Math.random() * 600 - 300, Math.random() * 600 - 300);
+				scene.add(sphereTab[i]);
+			    }
+			//  end sphere on light
+			
 			let Wtop = window.screenTop;
 			let Wleft = window.screenLeft;
 			
