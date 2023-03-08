@@ -1,4 +1,4 @@
-/* version 1.0.0.0
+/* version 1.0.0.0*/
 
 body, canvas, html {
    
@@ -51,4 +51,9 @@ body, canvas, html {
    z-index : 2;
    padding :10px;
 
+}
+
+img {
+width : 150px;
+height : 150px;
 }
