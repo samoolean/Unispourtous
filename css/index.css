@@ -83,6 +83,8 @@ body, canvas, html {
 
 }
 
+html {font-size: 10px;}
+
 canvas {
    
    position: fixed;
