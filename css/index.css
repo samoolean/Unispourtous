@@ -51,7 +51,7 @@ input[type="search"] {
   font-weight: bold;
   background: var(--color-brand);
   border-radius: 0 var(--rad) var(--rad) 0;
-  margin-left: 36%;
+  
 }
 input:not(:placeholder-shown) {
   border-radius: var(--rad) 0 0 var(--rad);
@@ -185,6 +185,7 @@ canvas {
 img {
 width : 50px;
 height : 50px;
+  margin-right: 36%;
 }
 
 .divc{
