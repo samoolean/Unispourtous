@@ -116,6 +116,9 @@ canvas {
    display:flex;
    border-style:solid;
    border-color:pink;
+   align-items: center;
+   justify-content: center;
+    box-sizing: border-box; 
 
 }
 
