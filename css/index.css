@@ -84,6 +84,12 @@ body, canvas, html {
 
 }
 
+a input {
+
+  display : block;
+
+}
+
 .pa {
 
   text-decoration:none;
