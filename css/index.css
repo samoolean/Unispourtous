@@ -65,7 +65,7 @@ canvas {
 
    Border-radius:25px;
    background-color : #9de841;
-   margin-bottom:25%;
+   margin-bottom:75%;
    margin-left:50%;
    z-index : 2;
    padding :10px;
@@ -100,5 +100,7 @@ height : 50px;
 
    position:relative;
    z-index:2;
+   border-style:solid;
+   border-color:pink;
 
 }
