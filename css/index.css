@@ -51,6 +51,7 @@ input[type="search"] {
   font-weight: bold;
   background: var(--color-brand);
   border-radius: 0 var(--rad) var(--rad) 0;
+  margin-left: 36%;
 }
 input:not(:placeholder-shown) {
   border-radius: var(--rad) 0 0 var(--rad);
