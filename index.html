@@ -11,7 +11,11 @@
 		<canvas class="topB" id="bg"></canvas>
 		
 		<div class="dmain">
-			<input placeholder="Rechercher une annonce" type="search" id="site-search" name="q">
+			<form onsubmit="event.preventDefault();" role="search">
+			  <label for="search">Search for stuff</label>
+				  <input id="search" type="search" placeholder="Search..." autofocus required />
+			  <button type="submit">Go</button>    
+			</form>
 			<a class="" href="web/inscription.html"> <button class="B1" type="button"> Connexion </button>
 		</div>
 			
