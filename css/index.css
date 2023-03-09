@@ -44,6 +44,8 @@ canvas {
    z-index:2;
    position : relative;
    display:flex;
+   border-style:solid;
+   border-color:pink;
 
 }
 
