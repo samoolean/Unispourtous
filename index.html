@@ -93,25 +93,17 @@
 
 					scene.add( gltf.scene );
 
-					/*gltf.animations; // Array<THREE.AnimationClip>
+					gltf.animations; // Array<THREE.AnimationClip>
 					gltf.scene; // THREE.Group
 					gltf.scenes; // Array<THREE.Group>
 					gltf.cameras; // Array<THREE.Camera>
-					gltf.asset; // Object*/
+					gltf.asset; // Object
 
 				},
 				// called while loading is progressing
-				function ( xhr ) {
-
-					console.log( ( xhr.loaded / xhr.total * 100 ) + '% loaded' );
-
-				},
+				function ( xhr ) { console.log( ( xhr.loaded / xhr.total * 100 ) + '% loaded' ); },
 				// called when loading has errors
-				function ( error ) {
-
-					console.log( 'An error happened' );
-
-				}
+				function ( error ) { console.log( 'An error happened' ); }
 			);
 			
 			renderer.setSize( window.innerWidth, window.innerHeight );
@@ -167,13 +159,15 @@
 				windows.requestAnimationFrame(loop);
 			}
 			loop();*/
+			
+			camera.position.z = 1;
+			camera.position.y = 4;
+			camera.position.x = 4;
 
 			function animate() {
 				requestAnimationFrame( animate );
 				
-				camera.position.z = 1;
-				camera.position.y = 4;
-				camera.position.x = 4;
+				
 				
 				//loader.rotation.x += -0.005;
 				/*cube.rotation.x += 0.01;
