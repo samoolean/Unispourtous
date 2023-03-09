@@ -23,7 +23,7 @@ form {
   border-radius: var(--rad);
 }
 
-input, .button {
+input, .barbutton {
   height: var(--height);
   font-family: var(--font-fam);
   border: 0;
@@ -42,7 +42,7 @@ input[type="search"] {
   z-index: 1;
   position: relative;
 }
-.button {
+.barbutton {
   display: none; /* prevent being able to tab to it */
   position: absolute;
   top: 0;
@@ -178,7 +178,7 @@ canvas {
    background-color : white;
    z-index : 2;
    padding :10px;
-   margin-left : 50px;
+   /* margin-left : 50px; */
 
 }
 
