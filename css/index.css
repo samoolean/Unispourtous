@@ -23,7 +23,7 @@ form {
   border-radius: var(--rad);
 }
 
-input, .barbutton {
+input, .button {
   height: var(--height);
   font-family: var(--font-fam);
   border: 0;
@@ -42,7 +42,7 @@ input[type="search"] {
   z-index: 1;
   position: relative;
 }
-.barbutton {
+.button {
   display: none; /* prevent being able to tab to it */
   position: absolute;
   top: 0;
