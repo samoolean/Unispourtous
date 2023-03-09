@@ -21,8 +21,8 @@ form {
   width: 30rem;
   background: var(--color-brand);
   border-radius: var(--rad);
-}
-input, button {
+
+input, .barbutton {
   height: var(--height);
   font-family: var(--font-fam);
   border: 0;
@@ -41,7 +41,7 @@ input[type="search"] {
   z-index: 1;
   position: relative;
 }
-button {
+.barbutton {
   display: none; /* prevent being able to tab to it */
   position: absolute;
   top: 0;
@@ -68,6 +68,7 @@ label {
   overflow: hidden;
 }
 
+}
 /* end css search bar */
 
 body, canvas, html {
