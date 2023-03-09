@@ -54,7 +54,7 @@ button {
 input:not(:placeholder-shown) {
   border-radius: var(--rad) 0 0 var(--rad);
   width: calc(100% - var(--btn-width));
-  + button {
+} button {
     display: block;
   }
 }
@@ -80,10 +80,15 @@ body, canvas, html {
    overflow-x : hidden;
    /*background-image: url('https://samoolean.github.io/Unispourtous/img/space.jpg');*/
    scroll-behavior: smooth;
+   font-size: 10px;
 
 }
 
-html {font-size: 10px;}
+.pa {
+
+  text-decoration:none;
+
+}
 
 canvas {
    
