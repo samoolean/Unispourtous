@@ -21,6 +21,7 @@ form {
   width: 30rem;
   background: var(--color-brand);
   border-radius: var(--rad);
+}
 
 input, .barbutton {
   height: var(--height);
@@ -66,8 +67,6 @@ label {
   height: 1px;
   width: 1px;
   overflow: hidden;
-}
-
 }
 /* end css search bar */
 
