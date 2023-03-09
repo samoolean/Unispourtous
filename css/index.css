@@ -128,12 +128,11 @@ canvas {
    z-index:2;
    position : relative;
    display:flex;
-   border-style:solid;
-   border-color:pink;
    align-items: center;
    justify-content: center;
-    box-sizing: border-box; 
-
+   box-sizing: border-box;
+   background-color: black ;
+  
 }
 
 
