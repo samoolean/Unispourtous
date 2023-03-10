@@ -18,12 +18,12 @@
 /* Main styles */
 form {
   position: relative;
-  width: 30rem;
+  /* width: 30rem; */
   background: var(--color-brand);
   border-radius: var(--rad);
 }
 
-input, .barbutton {
+input[type="search"], .barbutton {
   height: var(--height);
   font-family: var(--font-fam);
   border: 0;
@@ -53,7 +53,7 @@ input[type="search"] {
   border-radius: 0 var(--rad) var(--rad) 0;
   
 }
-input:not(:placeholder-shown) {
+input[type="search"]:not(:placeholder-shown) {
   border-radius: var(--rad) 0 0 var(--rad);
   width: calc(100% - var(--btn-width));
  + button {
@@ -82,12 +82,6 @@ body, canvas, html {
    scroll-behavior: smooth;
    font-size: 10px;
    background: linear-gradient(to top, #1b1b1c, #6e6f70, #d0d2d6);
-
-}
-
-a input {
-
-  display : block;
 
 }
 
