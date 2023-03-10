@@ -81,7 +81,6 @@ body, canvas, html {
    overflow-x : hidden;
    scroll-behavior: smooth;
    font-size: 10px;
-   background: linear-gradient(to top, #1b1b1c, #6e6f70, #d0d2d6);
 
 }
 
