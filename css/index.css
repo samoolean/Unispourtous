@@ -82,6 +82,7 @@ body, canvas, html {
    /*background-image: url('https://samoolean.github.io/Unispourtous/img/space.jpg');*/
    scroll-behavior: smooth;
    font-size: 10px;
+   background: linear-gradient(to bottom, #1b1b1c, #6e6f70, #d0d2d6);
 
 }
 
