@@ -92,6 +92,8 @@ body, canvas, html {
 
 canvas {
    
+   height : 100%;
+   width : 100%; 
    position: fixed;
    background: linear-gradient(to top, #1b1b1c,  #6e6f70, #d0d2d6);
   
