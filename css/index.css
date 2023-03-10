@@ -18,7 +18,7 @@
 /* Main styles */
 form {
   position: relative;
-  /* width: 30rem; */
+  width: 100%;
   background: var(--color-brand);
   border-radius: var(--rad);
 }
@@ -121,7 +121,7 @@ canvas {
 
    z-index:2;
    position : relative;
-   /*display:flex;*/
+   display:flex;
    align-items: center;
    justify-content: center;
    box-sizing: border-box;
