@@ -100,7 +100,8 @@ a input {
 canvas {
    
    position: fixed;
-
+   background:transparent;
+  
 }
 
 .topB{
