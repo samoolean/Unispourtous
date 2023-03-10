@@ -61,10 +61,12 @@
 			const light = new THREE.PointLight( 0xff0000, 1, 100 );
 			light.position.set( 1, 6, 4 );
 			
+			const ambientLight = new THREE.AmbientLight(0xffffff);
+			
 			const light2 = new THREE.PointLight( 0xff0000, 1, 100 );
 			light.position.set( 3, 3, 3 );
 			
-			scene.add( light,light2 );
+			scene.add( light,light2, ambientLight );
 			
 			// sphere on light
 			
