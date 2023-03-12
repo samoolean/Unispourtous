@@ -23,6 +23,7 @@ form#bar {
   position: relative;
   width: 100%;
   background: #fff0;
+  z-index : 3;
   /* border-radius: var(--rad); */
 }
 
