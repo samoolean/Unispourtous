@@ -1,16 +1,19 @@
-/* version 1.2.1.5 */
+/* version 2.0.0.0 */
 
-/*Vars*/
-:root {
-  --rad: .7rem;
-  --dur: .3s;
-  --color-dark: #2f2f2f;
-  --color-light: #fff;
-  --color-brand: #57bd84;
-  --font-fam: 'Lato', sans-serif;
-  --height: 5rem;
-  --btn-width: 6rem;
-  --bez: cubic-bezier(0, 0, 0.43, 1.49);
+body, html {
+	
+	margin:0px;
+	padding:0px;
+	vertical-align:0px;
+	width: 100%;
+	
+}
+
+body {
+	
+	background: linear-gradient(to top, #1b1b1c,  #6e6f70, #d0d2d6);
+	background-attachment: fixed;
+	
 }
 
 /* css for search bar */
@@ -19,8 +22,14 @@
 form#bar {
   position: relative;
   width: 100%;
-  background: var(--color-brand);
-  border-radius: var(--rad);
+  background: #fff0;
+  /* border-radius: var(--rad); */
+}
+
+::-ms-clear { display: none; }
+
+::-webkit-search-cancel-button {
+    -webkit-appearance: none;
 }
 
 input[type="search"], .barbutton {
@@ -29,13 +38,14 @@ input[type="search"], .barbutton {
   border: 0;
   color: var(--color-dark);
   font-size: 1.8rem;
+
 }
 input[type="search"] {
   outline: 0; /* <-- shold probably remove this for better accessibility, adding for demo aesthetics for now. */
   width: 100%;
-  background: var(--color-light);
+  background: #fff0;
   padding: 0 1.6rem;
-  border-radius: var(--rad);
+  /* border-radius: var(--rad); */
   appearance: none; /*for iOS input[type="search"] roundedness issue. border-radius alone doesn't work*/
   transition: all var(--dur) var(--bez);
   transition-property: width, border-radius;
@@ -43,23 +53,27 @@ input[type="search"] {
   position: relative;
 }
 .barbutton {
-  display: none; /* prevent being able to tab to it */
+	
+  display: var(--switch); /* prevent being able to tab to it */
   position: absolute;
   top: 0;
   right: 0;
   width: var(--btn-width);
   font-weight: bold;
   background: var(--color-brand);
-  border-radius: 0 var(--rad) var(--rad) 0;
+  /* border-radius: 0 var(--rad) var(--rad) 0; */
   
 }
+
 input[type="search"]:not(:placeholder-shown) {
-  border-radius: var(--rad) 0 0 var(--rad);
+  /* border-radius: var(--rad) 0 0 var(--rad); */
   width: calc(100% - var(--btn-width));
- + button {
-    display: block;
-  }
+  transition: all var(--dur) var(--bez);
+  background: var(--color-light);
+
 }
+
+
 label {
   position: absolute;
   clip: rect(1px, 1px, 1px, 1px);
@@ -69,126 +83,32 @@ label {
   width: 1px;
   overflow: hidden;
 }
+
 /* end css search bar */
 
-body, canvas, html {
-   
-   margin: 0px;
-   padding: 0px;
-   top: 0;
-   left: 0;
-   vertical-align:0px;
-   overflow-x : hidden;
-   scroll-behavior: smooth;
-   font-size: 10px;
-
+.bigt {
+	
+	color: var(--color-brand);
+	font-family : var(--font-fam);
+	margin-top: 3% ;
+	margin-bottom: 5% ;
+	position:relative;
+	text-align:center;
+	z-index : 3 ;
+    font-size: 1550%;
+	
 }
 
-.pa {
-
-  text-decoration:none;
-
-}
-
-canvas {
-   
-   height : 100%;
-   width : 100%; 
-   position: fixed;
-   background: linear-gradient(to top, #1b1b1c,  #6e6f70, #d0d2d6);
-  
-}
-
-.topB{
-
-   position : absolute;
-   top : 0;
-   left : 0;
-   z-index: 1;
-   
-}
-
-.topbar {
-   
-   /*overflow: hidden;*/
-   
-   width : 100%;
-   display : flex;
-   justify-content:center;
-   background-color : black ;
-
-}
-
-.dmain{
-
-   z-index:2;
-   position : relative;
-   display:flex;
-   align-items: center;
-   justify-content: center;
-   box-sizing: border-box;
-   background-color: black ;
-  
-}
-
-
-
-.topbar a {
-
-   text-decoration : none;
-   color : white ;
-   /*font-weight*/
-
-}
-
-.sbar{
-
-   border-radius : 25px;
-   margin : 10px;
-
-}
-
-.B2{
-
-   Border-radius:25px;
-   background-color : #9de841;
-   margin-top:75%;
-   margin-left:50%;
-   z-index : 2;
-   padding :10px;
-   position : relative;
-
-}
-
-.B2 p {
-
-   font-size : 18px;
-   font-weight: bold;
-   color:black:
-
-}
-
-.B1{
-
-   Border-radius:25px;
-   background-color : white;
-   z-index : 2;
-   padding :10px;
-   margin-left : 50px;
-
-}
-
-img {
-width : 50px;
-height : 50px;
-  /*margin-right: 36%;*/
-}
-
-.divc{
-
-   position:relative;
-   z-index:2;
-   border-style:solid;
-   border-color:pink;
-
+.B2 {
+	
+	background-color : var(--color-brand);
+	color : black ;
+	font-family : var(--font-fam);
+	border : 0;
+	padding : 15px;
+	border-radius : 25px;
+	height: 50px;
+	width: 300px;
+	font-size: 1.5em;
+	
 }
