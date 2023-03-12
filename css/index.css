@@ -49,7 +49,7 @@ input[type="search"] {
   appearance: none; /*for iOS input[type="search"] roundedness issue. border-radius alone doesn't work*/
   transition: all var(--dur) var(--bez);
   transition-property: width, border-radius;
-  z-index: 1;
+  z-index: 2;
   position: relative;
 }
 .barbutton {
