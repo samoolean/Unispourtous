@@ -96,7 +96,8 @@ label {
 	position:absolute;
 	text-align:center;
 	z-index : 3 ;
-    font-size: 1550%;
+    	font-size: 1550%;
+	margin-left:50%;
 	
 }
 
@@ -108,7 +109,7 @@ label {
 	border : 0;
 	padding : 15px;
 	border-radius : 25px;
-	margin-left:50%;
+
 	height: 50px;
 	width: 300px;
 	font-size: 1.5em;
