@@ -20,7 +20,7 @@ body {
 
 /* Main styles */
 form#bar {
-  position: relative;
+  position: absolute;
   width: 100%;
   background: #fff0;
   z-index : 3;
